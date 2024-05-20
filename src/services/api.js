@@ -10,7 +10,7 @@ const extractJWT = async () => {
     return token;
   } else {
     // In production, retrieve the token from local storage or cookies
-    const token = localStorage.getItem('x-vouch-idp-accesstoken'); // or wherever the token is stored
+    const token = localStorage.getItem('dev-vouch-idp-accesstoken');
     if (!token) {
       throw new Error('No authentication token found');
     }
